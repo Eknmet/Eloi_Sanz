@@ -159,7 +159,7 @@ case
 	when count(id) > 4 then " Mes de 4 transaccions"
     when count(id) = 4 then " Tenen 4 transacions"
     else "Menys de 4 transaccions"
-end
+end as mes_menys_4
 from transaction
 group by company_id
 order by 2 desc;
